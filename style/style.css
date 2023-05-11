@@ -1,131 +1,78 @@
-.foto1{
-    float:left;
-    width: 300px;
-    height: 300px;
-    text-align: justify;
-    padding: 1px;
-    
-  }
-  .foto2{
-    float: left;
-    width: 300px;
-    height: 300px;
-    text-align: justify;
-    padding: 1px;
-    
-  }
-  .foto3{
-    float: left;
-    width: 300px;
-    height: 300px;
-    text-align: justify;
-    padding: 1px;
-    
-  }
-  .foto4{
-    float:left;
-    width: 300px;
-    height: 300px;
-    text-align: justify;
-    padding: 1px;
-  .image-section
-  {
-    display: block;
-    background-color: #ccc;
-  }
-  .galeria
-  {
-    font-family: 'open sans';
-  }
-  .galeria h1
-  {
+html, body{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+}
+
+.title{
     text-align: center;
-    margin: 20px 0 15px 0;
-    font-weight: 300;
-  }
-  .contenedor-imagenes
-  {
+    font-size: 40px;
+    color:#444;
+    margin-top: 100px;
+    font-weight: 100;
+}
+.container{
+    width: 100%;
+    max-width: 120%;
+    height: 50%;
     display: flex;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
     flex-wrap: wrap;
-    border-radius: 3px;
-  }
-  .contenedor-imagenes .imagen
-  {
-    width: 32%;
-    position: relative;
-    height: 250px;
-    margin-bottom: 5px;
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.75);
-  }
-  .imagen img /*pq es veigi be la foto*/
-  {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .overlay
-  {
-    position: absolute;
-    bottom: 0;
-    left:0;
-    background: rgba(0,118,192,0.781);
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.container .card{
+    width: 25%;
+    height: 60%;
+    border-radius: 0.8%;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
-  }
-  .overlay h2/* esto es pa poner el texto en el centro*/
-  { 
-    color:white;
-    font-weight: 300%;
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: 2%;
     text-align: center;
-    transform: translate(-50%,-50%);
-  }
-  .imagen:hover .overlay
-  {
-    height: 100%;
-    cursor: pointer;
-  }
-  @media  screen and (max-width: 1000px)/*PEL MOBIL , PQ LA PANTALLA QUEDI AJUSTADA*/
-  {
-    .contenedor-imagenes
-    {
-      width: 95%;
-    }
-  }
-  
-  @media screen and( max-width:700px) 
-  {
-    .contenedor-imagenes
-    {
-      width: 90%;
-    }
-    .contenedor-imagenes .imagen
-    {
-      width: 48%;
-    }
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15%);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+
+}
+
+.container .card img{
+    width: 33%;
+    height: 22%;
+}
+
+.container .card h1{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 1,6%;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color:#3498db;
     
-  }
-  
-  @media screen and( max-width:450px)
-  {
-    h1
-    {
-      font-size: 22px;
-    }
-    .contenedor-imagenes
-    {
-      width: 98%;
-    }
-    .contenedor-imagenes .imagen
-    {
-      width: 80%;
-    }  
-  }
+}
+
+
+
+
+
+
+
+
+
