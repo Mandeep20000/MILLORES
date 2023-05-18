@@ -5,6 +5,10 @@ h1{
 
 }
 
+div.TODO{
+    padding-left: 10%;
+}
+
 div.galeria{
     margin:10px 20px;
     box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 2px 0 rgba(0,0,0,0,19);
